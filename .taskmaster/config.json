@@ -1,0 +1,34 @@
+{
+  "models": {
+    "main": {
+      "provider": "openai",
+      "modelId": "gemini-2.5-pro",
+      "maxTokens": 50000,
+      "temperature": 0.2
+    },
+    "research": {
+      "provider": "openai",
+      "modelId": "grok-3-deepsearch",
+      "maxTokens": 20000,
+      "temperature": 0.1
+    },
+    "fallback": {
+      "provider": "openai",
+      "modelId": "gemini-2.5-pro",
+      "maxTokens": 128000,
+      "temperature": 0.2
+    }
+  },
+  "global": {
+    "logLevel": "info",
+    "debug": false,
+    "defaultSubtasks": 5,
+    "defaultPriority": "medium",
+    "projectName": "Taskmaster",
+    "ollamaBaseUrl": "http://localhost:11434/api",
+    "userId": "1234567890",
+    "openaiBaseUrl": "https://mcp.lingmiaoai.com/v1",
+    "azureOpenaiBaseUrl": "https://your-endpoint.openai.azure.com/",
+    "defaultTag": "master"
+  }
+}
